@@ -3,7 +3,7 @@ import { StyledIconProps } from '@styled-icons/styled-icon';
 
 import * as S from './styles';
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: React.ComponentType<StyledIconProps>;
   label: string;
 }
@@ -14,5 +14,3 @@ export const Button: React.FC<ButtonProps> = ({ icon: Icon, label, ...rest }) =>
       {label}
   </S.Container>
 );
-
-export default Button;

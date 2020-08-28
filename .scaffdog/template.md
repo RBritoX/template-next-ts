@@ -34,3 +34,17 @@ import styled from 'styled-components';
 export const Container = styled.div``;
 
 ```
+
+# `{{ input | pascal }}/{{ input | pascal }}.story.tsx`
+
+```tsx
+import React from 'react';
+import { storiesOf } from '@storybook/react'
+
+import {{ input | pascal }} from './index'
+
+storiesOf('Atoms/{{ input | pascal }}', module).add('default', () => (
+  <{{ input | pascal }} label='press'/>
+));
+
+```
